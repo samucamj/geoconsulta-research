@@ -1,0 +1,16 @@
+# GeoConsulta - Python Dependencies
+
+# Web Framework
+Flask==2.3.3
+Flask-CORS==4.0.0
+
+# Database
+SQLAlchemy==2.0.21
+psycopg2-binary==2.9.7
+GeoAlchemy2==0.14.1
+
+# Development
+python-dotenv==1.0.0
+
+# Production (optional)
+gunicorn==21.2.0

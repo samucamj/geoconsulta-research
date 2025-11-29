@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoConsulta - Geospatial Query Platform</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">
+                <span class="logo-icon">🗺️</span>
+                GeoConsulta
+            </h1>
+            <p class="tagline">Real-time Geospatial Query & Visualization</p>
+        </div>
+    </header>
+
+    <!-- Main Application -->
+    <main class="main-container">
+        <!-- Search Controls -->
+        <div class="search-panel">
+            <div class="search-group">
+                <div class="search-input-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search establishments..." 
+                        class="search-input"
+                    >
+                    <button id="clearSearch" class="clear-btn" title="Clear search">×</button>
+                </div>
+                
+                <select id="typeFilter" class="type-filter">
+                    <option value="all">All Types</option>
+                    <option value="pharmacy">Pharmacies</option>
+                    <option value="gas_station">Gas Stations</option>
+                </select>
+                
+                <button id="locationBtn" class="location-btn" title="Find my location">
+                    <span class="location-icon">📍</span>
+                    My Location
+                </button>
+            </div>
+            
+            <!-- Results Info -->
+            <div id="resultsInfo" class="results-info">
+                <span id="resultCount">0</span> establishments found
+            </div>
+        </div>
+
+        <!-- Map Container -->
+        <div id="map" class="map-container"></div>
+        
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading-indicator">
+            <div class="spinner"></div>
+            <span>Loading...</span>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 GeoConsulta - Research Project</p>
+            <p>Built with Flask, Leaflet.js & PostGIS</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
