@@ -3,7 +3,7 @@
 GeoConsulta - Web-Based Geospatial Query and Visualization Platform
 Main Flask application entry point
 
-Author: Manus AI
+Author: Samuel Novais
 License: MIT
 """
 

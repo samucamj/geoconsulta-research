@@ -156,7 +156,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Author**: [Your Name]
+- **Author**: Samuel Novais
 - **Institution**: [Your Institution]
 - **Email**: [your.email@example.com]
 
@@ -174,7 +174,7 @@ If you use this work in your research, please cite:
 ```bibtex
 @article{geoconsulta2024,
   title={GeoConsulta: A Web-Based Platform for Real-Time Geospatial Queries and Visualization},
-  author={[Your Name]},
+  author={Samuel Novais},
   journal={Computers \& Geosciences},
   year={2024},
   note={Submitted}
